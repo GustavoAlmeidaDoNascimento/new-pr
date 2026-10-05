@@ -12,7 +12,16 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Environment files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Editor and AI directories
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,5 +31,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
+.claude/
+.cursor/
 .cursorrules
